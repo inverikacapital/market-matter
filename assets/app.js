@@ -473,19 +473,7 @@
         <div class="bs"><span>Bought<b>₹${fmt(x.buy, 0)} cr</b></span><span>Sold<b>₹${fmt(x.sell, 0)} cr</b></span></div>
       </article>`;
     };
-    const both = L.fii.net + L.dii.net;
-    cards.innerHTML = side('fii', 'FII / FPI') + side('dii', 'DII') + `
-      <article class="card flowc reveal in">
-        <div class="lbl">Combined institutional</div>
-        <div class="big ${dir(both)}">${cr(both)}</div>
-        <div class="sub">FII + DII net for ${day}</div>
-        <div class="pair">
-          <div><small>Month to date · FII</small><b class="${dir(f.mtd.fii)}">${cr(f.mtd.fii)}</b></div>
-          <div><small>Month to date · DII</small><b class="${dir(f.mtd.dii)}">${cr(f.mtd.dii)}</b></div>
-          <div><small>Last ${f.last5.days} session${f.last5.days > 1 ? 's' : ''} · FII</small><b class="${dir(f.last5.fii)}">${cr(f.last5.fii)}</b></div>
-          <div><small>Last ${f.last5.days} session${f.last5.days > 1 ? 's' : ''} · DII</small><b class="${dir(f.last5.dii)}">${cr(f.last5.dii)}</b></div>
-        </div>
-      </article>`;
+    cards.innerHTML = side('fii', 'FII / FPI') + side('dii', 'DII');
     drawFlowChart(f);
   }
 
