@@ -1,0 +1,752 @@
+[
+ {
+  "ticker": "ADANIENT.NS",
+  "name": "Adani Enterprises",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "ADANIPORTS.NS",
+  "name": "Adani Ports & SEZ",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "APOLLOHOSP.NS",
+  "name": "Apollo Hospitals",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "ASIANPAINT.NS",
+  "name": "Asian Paints",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "AXISBANK.NS",
+  "name": "Axis Bank",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "BAJAJ-AUTO.NS",
+  "name": "Bajaj Auto",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "BAJFINANCE.NS",
+  "name": "Bajaj Finance",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "BAJAJFINSV.NS",
+  "name": "Bajaj Finserv",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "BEL.NS",
+  "name": "Bharat Electronics",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "BHARTIARTL.NS",
+  "name": "Bharti Airtel",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "BSE.NS",
+  "name": "BSE",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "CIPLA.NS",
+  "name": "Cipla",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "COALINDIA.NS",
+  "name": "Coal India",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "DRREDDY.NS",
+  "name": "Dr. Reddy's Laboratories",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "EICHERMOT.NS",
+  "name": "Eicher Motors",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "ETERNAL.NS",
+  "name": "Eternal",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "GRASIM.NS",
+  "name": "Grasim Industries",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "HCLTECH.NS",
+  "name": "HCLTech",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "HDFCBANK.NS",
+  "name": "HDFC Bank",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "HDFCLIFE.NS",
+  "name": "HDFC Life",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "HINDALCO.NS",
+  "name": "Hindalco Industries",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "HINDUNILVR.NS",
+  "name": "Hindustan Unilever",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "ICICIBANK.NS",
+  "name": "ICICI Bank",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "INDIGO.NS",
+  "name": "IndiGo",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "INFY.NS",
+  "name": "Infosys",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "ITC.NS",
+  "name": "ITC",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "JIOFIN.NS",
+  "name": "Jio Financial Services",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "JSWSTEEL.NS",
+  "name": "JSW Steel",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "KOTAKBANK.NS",
+  "name": "Kotak Mahindra Bank",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "LT.NS",
+  "name": "Larsen & Toubro",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "M&M.NS",
+  "name": "Mahindra & Mahindra",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "MARUTI.NS",
+  "name": "Maruti Suzuki",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "MAXHEALTH.NS",
+  "name": "Max Healthcare",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "NESTLEIND.NS",
+  "name": "Nestl\u00e9 India",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "NTPC.NS",
+  "name": "NTPC",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "ONGC.NS",
+  "name": "Oil and Natural Gas Corporation",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "POWERGRID.NS",
+  "name": "Power Grid",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "RELIANCE.NS",
+  "name": "Reliance Industries",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "SBILIFE.NS",
+  "name": "SBI Life Insurance Company",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "SHRIRAMFIN.NS",
+  "name": "Shriram Finance",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "SBIN.NS",
+  "name": "State Bank of India",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "SUNPHARMA.NS",
+  "name": "Sun Pharma",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "TCS.NS",
+  "name": "Tata Consultancy Services",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "TATACONSUM.NS",
+  "name": "Tata Consumer Products",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "TMPV.NS",
+  "name": "Tata Motors Passenger Vehicles",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "TATASTEEL.NS",
+  "name": "Tata Steel",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "TECHM.NS",
+  "name": "Tech Mahindra",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "TITAN.NS",
+  "name": "Titan Company",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "TRENT.NS",
+  "name": "Trent",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "ULTRACEMCO.NS",
+  "name": "UltraTech Cement",
+  "index": "Nifty 50"
+ },
+ {
+  "ticker": "AAPL",
+  "name": "Apple Inc.",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "ABBV",
+  "name": "AbbVie",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "ABT",
+  "name": "Abbott Laboratories",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "ACN",
+  "name": "Accenture",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "ADBE",
+  "name": "Adobe Inc.",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "AMAT",
+  "name": "Applied Materials",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "AMD",
+  "name": "Advanced Micro Devices",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "AMGN",
+  "name": "Amgen",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "AMT",
+  "name": "American Tower",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "AMZN",
+  "name": "Amazon",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "ANET",
+  "name": "Arista Networks",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "AVGO",
+  "name": "Broadcom",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "AXP",
+  "name": "American Express",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "BA",
+  "name": "Boeing",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "BAC",
+  "name": "Bank of America",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "BKNG",
+  "name": "Booking Holdings",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "BLK",
+  "name": "BlackRock",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "BMY",
+  "name": "Bristol Myers Squibb",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "BNY",
+  "name": "BNY Mellon",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "BRK-B",
+  "name": "Berkshire Hathaway (Class B)",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "C",
+  "name": "Citigroup",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "CAT",
+  "name": "Caterpillar Inc.",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "CMCSA",
+  "name": "Comcast",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "COF",
+  "name": "Capital One",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "COP",
+  "name": "ConocoPhillips",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "COST",
+  "name": "Costco",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "CRM",
+  "name": "Salesforce",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "CSCO",
+  "name": "Cisco",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "CVS",
+  "name": "CVS Health",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "CVX",
+  "name": "Chevron Corporation",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "DE",
+  "name": "Deere & Company",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "DELL",
+  "name": "Dell Technologies",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "DHR",
+  "name": "Danaher Corporation",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "DIS",
+  "name": "Walt Disney Company (The)",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "DUK",
+  "name": "Duke Energy",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "EMR",
+  "name": "Emerson Electric",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "FDX",
+  "name": "FedEx",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "GD",
+  "name": "General Dynamics",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "GE",
+  "name": "GE Aerospace",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "GEV",
+  "name": "GE Vernova",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "GILD",
+  "name": "Gilead Sciences",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "GM",
+  "name": "General Motors",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "GOOG",
+  "name": "Alphabet Inc. (Class C)",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "GS",
+  "name": "Goldman Sachs",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "HD",
+  "name": "Home Depot",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "IBM",
+  "name": "IBM",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "INTC",
+  "name": "Intel",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "INTU",
+  "name": "Intuit",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "ISRG",
+  "name": "Intuitive Surgical",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "JNJ",
+  "name": "Johnson & Johnson",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "JPM",
+  "name": "JPMorgan Chase",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "KO",
+  "name": "Coca-Cola Company (The)",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "LIN",
+  "name": "Linde plc",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "LLY",
+  "name": "Eli Lilly and Company",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "LMT",
+  "name": "Lockheed Martin",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "LOW",
+  "name": "Lowe's",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "LRCX",
+  "name": "Lam Research",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "MA",
+  "name": "Mastercard",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "MCD",
+  "name": "McDonald's",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "MDLZ",
+  "name": "Mondel\u0113z International",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "MDT",
+  "name": "Medtronic",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "META",
+  "name": "Meta Platforms",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "MMM",
+  "name": "3M",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "MO",
+  "name": "Altria",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "MRK",
+  "name": "Merck & Co.",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "MS",
+  "name": "Morgan Stanley",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "MSFT",
+  "name": "Microsoft",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "MU",
+  "name": "Micron Technology",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "NEE",
+  "name": "NextEra Energy",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "NFLX",
+  "name": "Netflix, Inc.",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "NOW",
+  "name": "ServiceNow",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "NVDA",
+  "name": "Nvidia",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "ORCL",
+  "name": "Oracle Corporation",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "PANW",
+  "name": "Palo Alto Networks",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "PEP",
+  "name": "PepsiCo",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "PFE",
+  "name": "Pfizer",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "PG",
+  "name": "Procter & Gamble",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "PLTR",
+  "name": "Palantir Technologies",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "PM",
+  "name": "Philip Morris International",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "QCOM",
+  "name": "Qualcomm",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "RTX",
+  "name": "RTX Corporation",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "SBUX",
+  "name": "Starbucks",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "SCHW",
+  "name": "Charles Schwab Corporation",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "SNDK",
+  "name": "Sandisk",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "SO",
+  "name": "Southern Company",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "T",
+  "name": "AT&T",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "TMO",
+  "name": "Thermo Fisher Scientific",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "TMUS",
+  "name": "T-Mobile US",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "TSLA",
+  "name": "Tesla, Inc.",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "TXN",
+  "name": "Texas Instruments",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "UBER",
+  "name": "Uber",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "UNH",
+  "name": "UnitedHealth Group",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "UNP",
+  "name": "Union Pacific Corporation",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "UPS",
+  "name": "United Parcel Service",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "USB",
+  "name": "U.S. Bancorp",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "V",
+  "name": "Visa Inc.",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "VZ",
+  "name": "Verizon",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "WFC",
+  "name": "Wells Fargo",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "WMT",
+  "name": "Walmart",
+  "index": "S&P 100"
+ },
+ {
+  "ticker": "XOM",
+  "name": "ExxonMobil",
+  "index": "S&P 100"
+ }
+]
