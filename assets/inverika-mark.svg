@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 100" fill="currentColor">
+  <title>Inverika Capital</title>
+  <defs>
+    <!-- open the ring where the arrow breaks out of it -->
+    <mask id="ic-ring" maskUnits="userSpaceOnUse">
+      <rect width="104" height="100" fill="#fff"/>
+      <path d="M58 37.8 L101 15.6" stroke="#000" stroke-width="12"/>
+    </mask>
+    <!-- bars live inside the ring and stop just under the arrow -->
+    <clipPath id="ic-inner"><circle cx="50" cy="50" r="32.5"/></clipPath>
+    <mask id="ic-under" maskUnits="userSpaceOnUse">
+      <rect width="104" height="100" fill="#fff"/>
+      <path d="M0 0 H104 V19.2 L0 63.5 Z" fill="#000"/>
+    </mask>
+  </defs>
+  <circle cx="50" cy="50" r="39" fill="none" stroke="currentColor" stroke-width="5.6" mask="url(#ic-ring)"/>
+  <g clip-path="url(#ic-inner)">
+    <rect x="23" y="28" width="6.2" height="62"/>
+    <g mask="url(#ic-under)">
+      <rect x="34" y="10" width="7.2" height="82"/>
+      <rect x="45.2" y="10" width="7.2" height="82"/>
+      <rect x="56.4" y="10" width="7.2" height="82"/>
+      <rect x="67.6" y="10" width="7.2" height="82"/>
+    </g>
+  </g>
+  <path d="M26 47.2 L89.6 20.1" stroke="currentColor" stroke-width="5"/>
+  <path d="M100.6 15.4 L86.85 14.8 L91.55 25.8 Z"/>
+</svg>

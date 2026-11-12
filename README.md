@@ -24,7 +24,8 @@ they are not proof of cause. Not investment advice.
 
 ```
 market-matter/
-├── index.html                  Results page (open via serve.ps1 or GitHub Pages)
+├── index.html                  Page: same design as inverikacapital.github.io; reads its live data/latest.json
+├── assets/                     styles.css, app.js and icons for index.html (copied from inverikacapital.github.io)
 ├── market-matter.js            The <market-matter> web component that draws a sweep
 ├── serve.ps1                   Local preview server: powershell -File serve.ps1
 ├── sweep/
