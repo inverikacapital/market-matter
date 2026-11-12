@@ -1,0 +1,28 @@
+[
+ {
+  "index": "^CRSLDX",
+  "baseDate": "2026-11-11",
+  "forDate": "2026-11-12",
+  "bias": "Bullish",
+  "score": 59.8,
+  "low": 23563.54,
+  "high": 24089.32,
+  "baseClose": 23779.3,
+  "actualDate": "2026-11-12",
+  "actualClose": 23865.8,
+  "actualPct": 0.36,
+  "hit": true,
+  "inRange": true,
+  "graded": true
+ },
+ {
+  "index": "^CRSLDX",
+  "baseDate": "2026-11-12",
+  "forDate": "2026-11-13",
+  "bias": "Mildly Bullish",
+  "score": 32.5,
+  "low": 23640.28,
+  "high": 24140.01,
+  "baseClose": 23865.8
+ }
+]

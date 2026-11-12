@@ -64,3 +64,14 @@ powershell -File serve.ps1    # opens on http://localhost:8765/
 
 `sweep/constituents.json` was copied from FinSpider (in the hebbarmanisha.github.io repository), which
 refreshes it weekly. In this repository it does not update itself, so replace it when the Nifty 50 changes.
+
+## Live market dashboard (moved here from inverikacapital.github.io)
+
+`index.html` with `assets/app.js` and `assets/styles.css` is the Market Matters dashboard (Nifty 500, indices,
+sectors, movers, FII/DII, global, FX & commodities, outlook, news). Its data lives in `market/`:
+
+- `scripts/fetch_data.py` writes `market/latest.json`, `market/history.json` and `market/flows.json` (standard library only).
+- `.github/workflows/update.yml` runs it, commits settled data and deploys the site to GitHub Pages
+  (Settings → Pages → Source: GitHub Actions). It also redeploys after code pushes and after the daily sweep.
+- `.github/workflows/ticker.yml` triggers `update.yml` every 15 minutes in market hours and in the FII/DII evening window.
+- `scripts/make_share_image.py` rebuilds `assets/share-v3.jpg`, the link-preview image.

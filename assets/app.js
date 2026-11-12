@@ -632,7 +632,7 @@
 
   async function load(initial) {
     try {
-      const r = await fetch('https://inverikacapital.github.io/data/latest.json?t=' + Date.now(), { cache: 'no-store' });
+      const r = await fetch('market/latest.json?t=' + Date.now(), { cache: 'no-store' });
       if (!r.ok) throw new Error(r.status);
       const d = await r.json();
       if (!initial && state.data && d.generatedAt === state.data.generatedAt) return;

@@ -1,0 +1,66 @@
+name: Market-hours ticker
+
+# GitHub's scheduler often starts cron jobs 30-60 minutes late and skips some
+# entirely, which is useless for 15-minute updates. Instead, this job starts,
+# stays awake, and triggers "Update market data" itself at fixed IST times:
+#   - every 15 minutes from 9:15 to 15:45 (market hours)
+#   - 19:15, 19:45, 20:15, 20:45, 21:15 (NSE publishes FII/DII around 7-8 PM)
+# A job can run at most 6 hours, so later starts pick up where the previous one stopped.
+
+on:
+  schedule:
+    - cron: "45 2 * * 1-5"   # 08:15 IST - morning start (even if GitHub is an hour late, it's up by the open)
+    - cron: "30 3 * * 1-5"   # 09:00 IST - backup morning start
+    - cron: "0 8 * * 1-5"    # 13:30 IST - afternoon start; waits for the morning job, then takes over
+    - cron: "15 13 * * 1-5"  # 18:45 IST - evening start for the FII/DII release
+  workflow_dispatch: {}
+
+permissions:
+  actions: write     # needed to trigger the update workflow
+  contents: read
+
+concurrency:
+  group: ticker
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      TZ: Asia/Kolkata
+    steps:
+      - name: Trigger updates at the scheduled IST times
+        run: |
+          set -u
+          started=$(date +%s)
+          stop_at=$(( started + 345 * 60 ))            # hand over before the 6-hour job limit
+          today=$(date +%Y-%m-%d)
+          at() { date -d "$today $1" +%s; }
+
+          # today's slots, in order
+          slots=""
+          t=$(at 09:15); end=$(at 15:45)
+          while [ "$t" -le "$end" ]; do slots="$slots $t"; t=$(( t + 900 )); done
+          for hm in 19:15 19:45 20:15 20:45 21:15; do slots="$slots $(at $hm)"; done
+
+          trigger() {
+            echo "$(date '+%H:%M:%S') -> triggering update"
+            gh workflow run update.yml --ref main || echo "trigger failed, will try at the next slot"
+          }
+
+          # catch up straight away if we woke up inside a window
+          now=$(date +%s)
+          if { [ "$now" -gt "$(at 09:15)" ] && [ "$now" -le "$(at 15:50)" ]; } || \
+             { [ "$now" -gt "$(at 19:15)" ] && [ "$now" -le "$(at 21:20)" ]; }; then trigger; fi
+
+          for s in $slots; do
+            now=$(date +%s)
+            [ "$s" -le "$now" ] && continue
+            if [ "$s" -gt "$stop_at" ]; then echo "Handing over to the next ticker run."; exit 0; fi
+            sleep $(( s - now + 20 ))                   # +20s so data for the slot has landed
+            trigger
+          done
+          echo "Done for today."

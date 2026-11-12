@@ -1,0 +1,74 @@
+name: Update market data
+
+# Refreshes market/latest.json (Nifty 500, indices, sectors, movers, FII/DII, global, outlook, news)
+# and deploys the whole site to GitHub Pages. During market hours ticker.yml triggers this every
+# 15 minutes; the schedule below is the fallback. It also redeploys after code pushes and after the
+# evening "Market Matter daily sweep" commits its data.
+
+on:
+  schedule:
+    # GitHub cron runs in UTC. IST = UTC + 5:30. Weekdays only.
+    - cron: "30 2 * * 1-5"      # 08:00 IST - overnight global cues before the NSE open
+    - cron: "45 10 * * 1-5"     # 16:15 IST - settled closing data
+    - cron: "15 11 * * 1-5"     # 16:45 IST - re-check so late exchange corrections are captured
+    - cron: "0 14 * * 1-5"      # 19:30 IST - NSE FII/DII figures (published ~7-8 PM)
+    - cron: "0 15 * * 1-5"      # 20:30 IST - FII/DII re-check in case NSE publishes late
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+  workflow_run:
+    workflows: ["Market Matter daily sweep"]
+    types: [completed]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: market-matters
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch market data
+        # If a source is down, keep the last good data and still deploy.
+        continue-on-error: true
+        run: python scripts/fetch_data.py
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "market-matters-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add market/history.json market/flows.json
+          # Mid-session snapshots are deployed but not committed, so the repo doesn't grow 26x a day.
+          STATUS=$(python -c "import json;print(json.load(open('market/latest.json'))['session']['status'])")
+          if [ "$STATUS" != "live" ]; then git add market/latest.json; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "data: market matters $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
+            git stash --include-untracked || true
+            git pull --rebase || true
+            git push || echo "push failed; data is still deployed below"
+            git stash pop || true
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deploy
+        uses: actions/deploy-pages@v4
