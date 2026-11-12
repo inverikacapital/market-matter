@@ -197,12 +197,12 @@ main { padding: 26px 0 40px; display: flex; flex-direction: column; gap: 22px; }
 
 /* index list */
 .idx-list { display: flex; flex-direction: column; gap: 4px; margin: 0 -10px; }
-.idx-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(60px, 120px) 82px; justify-items: stretch; align-items: center; gap: 12px; padding: 12px 10px;
+.idx-row { display: grid; grid-template-columns: minmax(max-content, 1fr) minmax(24px, 120px) auto; justify-items: stretch; align-items: center; gap: 12px; padding: 12px 10px;
   border-radius: 12px; transition: background .2s; position: relative; }
 .idx-row:hover { background: var(--bg-2); }
 .idx-row.lead { background: var(--bg-2); }
 .idx-row.lead::before { content: ""; position: absolute; left: 0; top: 10px; bottom: 10px; width: 3px; border-radius: 3px; background: var(--accent); }
-.idx-row .nm { font-weight: 600; font-size: 15px; }
+.idx-row .nm { font-weight: 600; font-size: 15px; white-space: nowrap; }
 .idx-row .lv { color: var(--ink-3); font-size: 13.5px; font-variant-numeric: tabular-nums; margin-top: 1px; }
 .mag { position: relative; height: 6px; border-radius: 6px; background: var(--neutral-tile); overflow: hidden; }
 .mag i { position: absolute; top: 0; bottom: 0; border-radius: 6px; }
