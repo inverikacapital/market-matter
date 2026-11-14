@@ -344,8 +344,8 @@
 
     const t = d.track;
     $('#trackStats').innerHTML = t.calls
-      ? `<span>Calls graded<b>${t.calls}</b></span><span>Direction right<b>${t.accuracy}%</b></span><span>Closed inside range<b>${t.inRange}%</b></span>`
-      : '<span>Starts building after the first call is graded</span>';
+      ? `<span>Market outlook tracked<b>${t.calls}</b></span><span>Direction right<b>${t.accuracy}%</b></span><span>Closed inside range<b>${t.inRange}%</b></span>`
+      : '<span>Starts building after the first outlook is tracked</span>';
     // during the session: how the call made before the open is tracking right now
     let live = '';
     if (t.pending) {
