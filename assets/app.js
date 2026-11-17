@@ -226,7 +226,9 @@
   function renderHeader(d) {
     const s = $('#status'), map = { closed: 'Market closed', live: 'Market open', 'pre-open': 'Pre-open' };
     s.className = 'status ' + d.session.status;
-    $('span', s).textContent = map[d.session.status] || d.session.status;
+    const short = { closed: 'Closed', live: 'Open', 'pre-open': 'Pre-open' };
+    $('span', s).innerHTML = `<span class="st-full">${esc(map[d.session.status] || d.session.status)}</span>` +
+      `<span class="st-short">${esc(short[d.session.status] || d.session.status)}</span>`;
     const g = new Date(d.generatedAt);
     $('#updated').textContent = 'Updated ' + g.toLocaleString('en-IN', { timeZone: TZ, hour: 'numeric', minute: '2-digit', weekday: 'short', day: 'numeric', month: 'short' }) + ' IST';
     $('#sources').textContent = 'Data: ' + d.sources.join(' · ');
@@ -600,6 +602,20 @@
     root.dataset.theme = dark ? 'light' : 'dark';
     try { localStorage.setItem('ms-theme', root.dataset.theme); } catch (e) { /* storage unavailable */ }
   });
+
+  // "Know more about us" menu
+  const about = $('#about'), aboutBtn = $('#aboutBtn');
+  if (about && aboutBtn) {
+    const setOpen = (open) => {
+      about.classList.toggle('open', open);
+      aboutBtn.setAttribute('aria-expanded', String(open));
+      if (open) $('.about-item', about)?.focus({ preventScroll: true });
+    };
+    aboutBtn.addEventListener('click', (e) => { e.stopPropagation(); setOpen(!about.classList.contains('open')); });
+    document.addEventListener('click', (e) => { if (!about.contains(e.target)) setOpen(false); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && about.classList.contains('open')) { setOpen(false); aboutBtn.focus(); } });
+    $$('.about-item', about).forEach((a) => a.addEventListener('click', () => setOpen(false)));
+  }
 
   // reveal-on-scroll
   const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }),
