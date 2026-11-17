@@ -250,10 +250,33 @@ td:first-child { font-weight: 600; }
 .conf .bar { flex: 1; height: 6px; border-radius: 9px; background: var(--bg-2); overflow: hidden; }
 .conf .bar i { display: block; height: 100%; width: 0; border-radius: 9px; background: var(--accent); transition: width 1.4s var(--ease); }
 .conf b { color: var(--ink); font-variant-numeric: tabular-nums; }
-/* outlook disclaimer, kept right under the gauge on every screen size */
-.gauge-note { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line); width: 100%; max-width: 340px; text-align: left; }
-.gauge-note p { margin: 0; font-size: 12.5px; line-height: 1.55; color: var(--ink-2); }
-.gauge-note .gauge-note-strong { margin-top: 8px; font-weight: 700; color: var(--ink); }
+/* outlook disclaimer: its own wide box. Laptop: full-width strip under the three cards.
+   Tablet: between the first row and the factors. Phone: directly under the gauge. */
+.outlook-grid .gauge-card { order: 1; }
+.outlook-grid .range-card { order: 2; }
+.outlook-grid .factors-card { order: 3; }
+.outlook-note { order: 4; grid-column: 1 / -1; display: flex; align-items: center; gap: 18px; padding: 18px 22px;
+  border-radius: var(--radius); border: 1px solid color-mix(in oklab, var(--accent) 30%, var(--line));
+  background: linear-gradient(100deg, color-mix(in oklab, var(--accent) 10%, var(--card)) 0%, var(--card) 55%);
+  box-shadow: var(--shadow); }
+.on-icon { flex: none; width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center;
+  background: color-mix(in oklab, var(--accent) 16%, transparent); }
+.on-icon svg { width: 20px; height: 20px; fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; }
+.on-text { flex: 1; margin: 0; font-size: 13.5px; line-height: 1.6; color: var(--ink-2); }
+.on-strong { flex: none; margin: 0; padding-left: 20px; border-left: 1px solid var(--line); font-size: 14.5px; line-height: 1.45;
+  font-weight: 700; color: var(--ink); white-space: nowrap; }
+@media (max-width: 1080px) {
+  .outlook-note { order: 3; }
+  .outlook-grid .factors-card { order: 4; }
+}
+@media (max-width: 640px) {
+  .outlook-note { order: 2; flex-wrap: wrap; align-items: flex-start; gap: 12px 14px; padding: 16px; }
+  .on-icon { width: 32px; height: 32px; }
+  .on-icon svg { width: 18px; height: 18px; }
+  .on-text { flex: 1 1 0; min-width: 0; font-size: 13.5px; }
+  .outlook-grid .range-card { order: 3; }
+  .on-strong { padding-left: 0; padding-top: 12px; border-left: 0; border-top: 1px solid var(--line); width: 100%; white-space: normal; }
+}
 
 .range { padding: 6px 0 4px; }
 .range-bar { position: relative; height: 10px; border-radius: 99px; margin: 34px 8px 30px;
@@ -470,7 +493,7 @@ td:first-child { font-weight: 600; }
 /* ============================================================ responsive */
 @media (max-width: 1080px) {
   .outlook-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
-  .outlook-grid .card:last-child { grid-column: 1 / -1; }
+  .outlook-grid .factors-card { grid-column: 1 / -1; }
   .four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 12px; }
 }

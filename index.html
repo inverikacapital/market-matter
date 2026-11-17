@@ -31,7 +31,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Saira+Stencil+One&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css?v=20261117">
+  <link rel="stylesheet" href="assets/styles.css?v=20261117c">
   <script>
     try { const t = localStorage.getItem('ms-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
   </script>
@@ -140,18 +140,19 @@
           <div class="gauge" id="gauge"></div>
           <div class="bias" id="bias">—</div>
           <div class="conf"><span>Confidence</span><div class="bar"><i id="confBar"></i></div><b id="confVal">—</b></div>
-          <div class="gauge-note" role="note" aria-label="About this outlook">
-            <p>This is a machine reading of technical and macro signals. It is not our opinion, it is not advice, and it is wrong often enough that we do not invest on it. We publish it to show what short-term forecasting actually looks like over time. What happens to your money should depend on your goals and your horizon, not on tomorrow.</p>
-            <p class="gauge-note-strong">We publish this. We don't trade on it.</p>
-          </div>
         </article>
-        <article class="card reveal" style="--d:1">
+        <aside class="outlook-note reveal" role="note" aria-label="About this outlook">
+          <span class="on-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg></span>
+          <p class="on-text">This is a machine reading of technical and macro signals. It is not our opinion, it is not advice, and it is wrong often enough that we do not invest on it. We publish it to show what short-term forecasting actually looks like over time. What happens to your money should depend on your goals and your horizon, not on tomorrow.</p>
+          <p class="on-strong">We publish this.<br>We don't trade on it.</p>
+        </aside>
+        <article class="card range-card reveal" style="--d:1">
           <h3 class="card-title">Expected Nifty 500 range <span class="hint">~68% probability</span></h3>
           <div class="range" id="range"></div>
           <h3 class="card-title mt">Key levels</h3>
           <div class="pivots" id="pivots"></div>
         </article>
-        <article class="card reveal" style="--d:2">
+        <article class="card factors-card reveal" style="--d:2">
           <h3 class="card-title">What's driving the call</h3>
           <div class="factors" id="factors"></div>
         </article>
