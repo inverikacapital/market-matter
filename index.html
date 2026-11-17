@@ -31,7 +31,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Saira+Stencil+One&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css?v=20261112">
+  <link rel="stylesheet" href="assets/styles.css?v=20261117">
   <script>
     try { const t = localStorage.getItem('ms-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
   </script>
@@ -140,6 +140,10 @@
           <div class="gauge" id="gauge"></div>
           <div class="bias" id="bias">—</div>
           <div class="conf"><span>Confidence</span><div class="bar"><i id="confBar"></i></div><b id="confVal">—</b></div>
+          <div class="gauge-note" role="note" aria-label="About this outlook">
+            <p>This is a machine reading of technical and macro signals. It is not our opinion, it is not advice, and it is wrong often enough that we do not invest on it. We publish it to show what short-term forecasting actually looks like over time. What happens to your money should depend on your goals and your horizon, not on tomorrow.</p>
+            <p class="gauge-note-strong">We publish this. We don't trade on it.</p>
+          </div>
         </article>
         <article class="card reveal" style="--d:1">
           <h3 class="card-title">Expected Nifty 500 range <span class="hint">~68% probability</span></h3>
@@ -159,7 +163,6 @@
         </div>
         <div class="track-list" id="trackList"></div>
       </article>
-      <p class="disclaimer">The outlook is generated automatically from technical and macro signals. It is informational only, not investment advice, and can be wrong. Do your own research or consult a SEBI-registered adviser before trading.</p>
     </section>
 
     <!-- SECTORS -->
