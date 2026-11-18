@@ -123,8 +123,9 @@ button { font: inherit; color: inherit; }
 .ai-icon svg { width: 21px; height: 21px; }
 .about-item.wa .ai-icon { background: rgba(37, 211, 102, .14); }
 .about-item.wa .ai-icon svg { fill: #25d366; }
-.about-item.web .ai-icon { background: color-mix(in oklab, var(--accent) 15%, transparent); }
-.about-item.web .ai-icon svg { fill: none; stroke: var(--accent); stroke-width: 1.8; }
+/* website = Inverika logo on the brand navy tile (same look in light and dark mode) */
+.about-item.web .ai-icon { background: #0b0f1a; color: #f4f6fa; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08); }
+.about-item.web .ai-icon .ai-mark { width: 26px; height: 26px; overflow: visible; }
 .ai-text { flex: 1; min-width: 0; }
 .ai-text b { display: block; font-size: 14px; font-weight: 600; }
 .ai-text small { display: block; font-size: 12px; color: var(--ink-3); }
