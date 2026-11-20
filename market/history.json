@@ -103,7 +103,13 @@
   "score": 21.6,
   "low": 23670.38,
   "high": 24155.41,
-  "baseClose": 23897.15
+  "baseClose": 23897.15,
+  "actualDate": "2026-11-20",
+  "actualClose": 24088.8,
+  "actualPct": 0.8,
+  "hit": true,
+  "inRange": true,
+  "graded": true
  },
  {
   "index": "^CRSLDX",
@@ -111,8 +117,8 @@
   "forDate": "2026-11-23",
   "bias": "Neutral",
   "score": 10.2,
-  "low": 23830.77,
-  "high": 24356.04,
-  "baseClose": 24085.4
+  "low": 23833.99,
+  "high": 24359.63,
+  "baseClose": 24088.8
  }
 ]
