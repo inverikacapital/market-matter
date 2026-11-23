@@ -131,10 +131,10 @@
   "index": "^CRSLDX",
   "baseDate": "2026-11-23",
   "forDate": "2026-11-24",
-  "bias": "Mildly Bullish",
-  "score": 17.5,
-  "low": 23497.26,
-  "high": 24026.84,
+  "bias": "Bullish",
+  "score": 56.4,
+  "low": 23528.13,
+  "high": 24057.71,
   "baseClose": 23748.15
  }
 ]
