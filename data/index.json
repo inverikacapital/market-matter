@@ -1,6 +1,12 @@
 {
- "updated": "2026-11-26T12:13+00:00",
+ "updated": "2026-11-27T12:08+00:00",
  "sweeps": [
+  {
+   "date": "2026-11-27",
+   "pct": -1.07,
+   "headline": "Nifty 50 dropped sharply −1.07% to 25,607.20; Sensex −1.17% to 83,339.26",
+   "file": "sweeps/2026-11-27.json"
+  },
   {
    "date": "2026-11-26",
    "pct": 0.25,
