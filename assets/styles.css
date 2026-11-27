@@ -178,6 +178,12 @@ button { font: inherit; color: inherit; }
 
 /* ============================================================ layout */
 main { padding-top: 22px; padding-bottom: 40px; }
+/* phones only: the header has no room for the product name, so show it at the top of the page */
+.m-byline { display: none; }
+@media (max-width: 640px) {
+  .m-byline { display: block; margin: 6px 0 14px; font-size: 13px; color: var(--ink-3); }
+  .m-byline b { color: var(--ink); font-weight: 700; }
+}
 .section { padding: 18px 0 26px; }
 .section-head { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin: 8px 0 14px; flex-wrap: wrap; }
 .section-head h2 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -.02em; }
